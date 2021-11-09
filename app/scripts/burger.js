@@ -4,17 +4,18 @@ function Burger(name, price, ingredients = [], size){
     this.ingredients = ingredients;
     this.size = size;
 
-    this.setName = function(size){
-
+    this.setName = function(name){
+        this.name = name;
     }
 
-    this.getName = function(name){
+    this.getName = function(){
         return this.name;
     }
 
     
     this.addIngredient = function(ingredient){
         this.ingredients.push(ingredient);
+        document.getElementById
         console.log("Dodano " + ingredient.name);
     };
 

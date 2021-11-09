@@ -1,0 +1,13 @@
+.summary{
+    justify-content: center;
+    align-content: center;
+    margin-left: auto;
+}
+
+#summary-title{
+    color: #f9f9f9;
+    font-family: Sue Ellen Francisco;
+    font-size: 3rem;
+    text-align: center;
+    margin-right: 2rem;
+}  

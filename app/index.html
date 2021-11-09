@@ -1,35 +1,43 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Burger Maker</title>
-    <link rel="icon" href="resources/icon.png" type="image/png">
+    <link rel="icon" type="image/png" href="resources/logo.png">
     <link rel="stylesheet" href="styles/style.css">
     <link rel="stylesheet" href="styles/ingredients.css">
+    <link rel="stylesheet" href="styles/content.css">
+    <link rel="stylesheet" href="styles/summary.css">
 </head>
+
 <body>
-    <div class="ingredients">
-        <div id="ingredient-title">Ingredients</div>
-        <ul id="ingredients-list"> 
-            <li><button class="ingredient-button" id="Bread" price="2">Bread</button></li>
-            <li><button class="ingredient-button" id="Meat" price="5">Meat</button></li>
-            <li><button class="ingredient-button" id="Salad" price="1">Salad</button></li>
-            <li><button class="ingredient-button" id="Onion" price="0.5">Onion</button></li>
-            <li><button class="ingredient-button" id="Beacon" price="3">Beacon</button></li>
-            <li><button class="ingredient-button" id="Salad" price="1">Salad</button></li>
-            <li><button class="ingredient-button" id="Tomato" price="1">Tomato</button></li>
-        </ul>
-    </div>
-    <div class="content">
-        Make your own Burger
-    </div>
-    <div class="title">
-        Ingredients
-    </div>  
+    <header>
+        <img src="resources/burgermakerlogo.svg">
+    </header>
+    <main>
+        <div id="ingredients">
+            <div id="ingredient-title">Ingredients</div>
+            <ul id="ingredients-list">
+                <li><button class="ingredient-button" id="Bread" price="2">Bread</button></li>
+                <li><button class="ingredient-button" id="Meat" price="5">Meat</button></li>
+                <li><button class="ingredient-button" id="Salad" price="1">Salad</button></li>
+                <li><button class="ingredient-button" id="Onion" price="0.5">Onion</button></li>
+                <li><button class="ingredient-button" id="Beacon" price="3">Beacon</button></li>
+                <li><button class="ingredient-button" id="Salad" price="1">Salad</button></li>
+                <li><button class="ingredient-button" id="Tomato" price="1">Tomato</button></li>
+            </ul>
+        </div>
+        <div id="content"> Zawartość </div>
+        <div id="summary">
+            <div id="summary-title">Summary</div>
+        </div>
+    </main>
     <script type="module" src="scripts/ingredient.js"></script>
     <script type="module" src="scripts/burger.js"></script>
     <script type="module" src="scripts/script.js"></script>
 </body>
+
 </html>
