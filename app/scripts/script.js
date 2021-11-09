@@ -2,6 +2,7 @@ import { Ingredient, IngredientFactory } from "./ingredient.js";
 import { Burger } from "./burger.js";
 
 window.onload = function () {
+
     let burger = new Burger("Cheesburger", 0, []);
     let ingredientFactory = new IngredientFactory();
 

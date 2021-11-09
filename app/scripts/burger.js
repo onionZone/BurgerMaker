@@ -15,8 +15,13 @@ function Burger(name, price, ingredients = [], size){
     
     this.addIngredient = function(ingredient){
         this.ingredients.push(ingredient);
-        document.getElementById
         console.log("Dodano " + ingredient.name);
+        var table = document.getElementById("summary-table");
+        var tr = table.insertRow();
+        var tc1 = tr.insertCell();
+        var tc2 = tr.insertCell();
+        tc1.innerHTML = ingredient.name;
+        tc2.innerHTML = ingredient.price + " $";
     };
 
     this.removeIngredient = function(id){
@@ -52,6 +57,8 @@ function Burger(name, price, ingredients = [], size){
         }
 
         console.log("Burger price: " + price)
+        var priceText = document.getElementById("summary-value");
+        priceText.innerHTML = "Burger price: " + price + " $";
     };
 }
 

@@ -11,13 +11,20 @@ header img{
 }
 
 header img:hover{
-    width: 20%;
-    height: 20%;
+    width: 240px;
+    height: 240px;
 }
 main{
     display: flex;
     flex-direction:  row;
     justify-content: space-between;
+}
+
+.section-title{
+    color: #f9f9f9;
+    font-family: Sue Ellen Francisco;
+    font-size: 3rem;
+    text-align: center;
 }
 
 

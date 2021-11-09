@@ -18,21 +18,29 @@
         <img src="resources/burgermakerlogo.svg">
     </header>
     <main>
-        <div id="ingredients">
-            <div id="ingredient-title">Ingredients</div>
+        <div id="config">
+            <div class="section-title" id="config-type-title">Type</div>
             <ul id="ingredients-list">
-                <li><button class="ingredient-button" id="Bread" price="2">Bread</button></li>
+                <li><button class="type-button" id="Bread" price="2">Bun</button></li>
+                <li><button class="type-button" id="Meat" price="5">Meat</button></li>
+            </ul>
+            <div class="section-title" id="config-ingredients-title">Ingredients</div>
+            <ul id="ingredients-list">
+                <li><button class="ingredient-button" id="Bread" price="2">Bun</button></li>
                 <li><button class="ingredient-button" id="Meat" price="5">Meat</button></li>
                 <li><button class="ingredient-button" id="Salad" price="1">Salad</button></li>
                 <li><button class="ingredient-button" id="Onion" price="0.5">Onion</button></li>
                 <li><button class="ingredient-button" id="Beacon" price="3">Beacon</button></li>
                 <li><button class="ingredient-button" id="Salad" price="1">Salad</button></li>
                 <li><button class="ingredient-button" id="Tomato" price="1">Tomato</button></li>
+                <li><button class="ingredient-button" id="Pickles" price="1">Pickles</button></li>
             </ul>
         </div>
         <div id="content"> Zawartość </div>
         <div id="summary">
             <div id="summary-title">Summary</div>
+            <table id="summary-table"></table>
+            <div id="summary-value"></div>
         </div>
     </main>
     <script type="module" src="scripts/ingredient.js"></script>

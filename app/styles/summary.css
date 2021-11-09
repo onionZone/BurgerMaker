@@ -9,5 +9,32 @@
     font-family: Sue Ellen Francisco;
     font-size: 3rem;
     text-align: center;
-    margin-right: 2rem;
-}  
+    margin-right: auto;
+    margin-left: auto;
+}
+
+#summary-value{
+    color: #008b46;
+    font-family: Sue Ellen Francisco;
+    font-size: 3rem;
+    text-align: center;
+    margin-right: auto;
+    margin-left: auto;
+    border-top: solid;
+    border-top-width: 0.15rem;
+    border-color: #f9f9f9;
+}
+
+#summary-table{
+    
+    color: #f9f9f9;
+    font-family: Sue Ellen Francisco;
+    font-size: 2rem;
+    padding-left: 5rem;
+    padding-right: 5rem;
+}
+
+#summary-table td{
+    padding-left: 5rem;
+    padding-right: 5rem;
+}

@@ -4,24 +4,20 @@
     margin-right: auto;
 }
 
-#ingredient-title{
-    color: #f9f9f9;
-    font-family: Sue Ellen Francisco;
-    font-size: 3rem;
-    text-align: center;
-}   
-
 #ingredients-list{
-    list-style: none;
+    
     display: inline;
     margin: auto;
+    display: grid;
+     grid-template-columns: repeat(2, 1fr);
 }
+
 
 #ingredients-list li{
     display: flex;
     align-self: auto;
     padding: 1rem;
-}
+}   
 
 .ingredient-button{
     width: 10rem;
@@ -35,4 +31,25 @@
     font-family: Sue Ellen Francisco;
     font-size: 2rem;
 
+}
+
+.type-button{
+    width: 10rem;
+    height: 10rem;
+    background-color: transparent;
+    border-color: #f9f9f9;
+    border-radius: 1rem;
+    border-style: dotted;
+    border: 1 1 1 1 ;
+    color: #f9f9f9;
+    font-family: Sue Ellen Francisco;
+    font-size: 2rem;
+}
+
+
+.ingredient-button:hover{
+    width: 10.1rem;
+    height: 5.1rem;
+    background-color: #f9f9f9;
+    color: #1a1a1a;
 }
