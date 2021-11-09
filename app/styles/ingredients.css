@@ -1,0 +1,38 @@
+.ingredients{
+    justify-content: center;
+    align-content: center;
+    margin-right: auto;
+}
+
+#ingredient-title{
+    color: #f9f9f9;
+    font-family: Sue Ellen Francisco;
+    font-size: 3rem;
+    text-align: center;
+}   
+
+#ingredients-list{
+    list-style: none;
+    display: inline;
+    margin: auto;
+}
+
+#ingredients-list li{
+    display: flex;
+    align-self: auto;
+    padding: 1rem;
+}
+
+.ingredient-button{
+    width: 10rem;
+    height: 5rem;
+    background-color: transparent;
+    border-color: #f9f9f9;
+    border-radius: 1rem;
+    border-style: dotted;
+    border: 1 1 1 1 ;
+    color: #f9f9f9;
+    font-family: Sue Ellen Francisco;
+    font-size: 2rem;
+
+}
