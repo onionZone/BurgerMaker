@@ -30,11 +30,32 @@
     color: #f9f9f9;
     font-family: Sue Ellen Francisco;
     font-size: 2rem;
-    padding-left: 5rem;
-    padding-right: 5rem;
+    padding-left: 3rem;
+    padding-right: 3rem;
 }
 
 #summary-table td{
-    padding-left: 5rem;
-    padding-right: 5rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+}
+
+.remove-button{
+    width: 3rem;
+    height: 3rem;
+    background-color: #1a1a1a;
+    color: #f9f9f9;
+    font-family: Sue Ellen Francisco;
+    font-size: 2rem;
+    text-align: center;
+    vertical-align: middle;
+    border-color: #f9f9f9;
+    border-radius: 100%;
+    border-style: solid;
+    border: 1 1 1 1 ;
+    margin: 0 auto;
+}
+
+.remove-button:hover{
+    background-color: #f9f9f9;
+    color: #1a1a1a;
 }

@@ -14,7 +14,6 @@ window.onload = function () {
                 console.log("This ingredient is already in Your burger");
             }
             burger.calculatePrice();
-            burger.showIngredients();
         })
-    })
+    });
 }

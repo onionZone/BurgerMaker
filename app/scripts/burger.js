@@ -1,58 +1,44 @@
-function Burger(name, price, ingredients = [], size){
-    this.name = name;
-    this.price = price;
+function Burger(ingredients = [], type) {
     this.ingredients = ingredients;
-    this.size = size;
+    this.type = type;
+    this.observers = [];
 
-    this.setName = function(name){
-        this.name = name;
+    this.subscribe = function(observer){
+        this.observers.push(observer);
     }
 
-    this.getName = function(){
-        return this.name;
+    this.unsubscribe = function(observer){
+
     }
 
-    
-    this.addIngredient = function(ingredient){
+    /*
+        This function is adding new ingredient from 
+        Ingrdient Factory to Burger ingridient list
+    */
+    this.addIngredient = function (ingredient) {
         this.ingredients.push(ingredient);
-        console.log("Dodano " + ingredient.name);
-        var table = document.getElementById("summary-table");
-        var tr = table.insertRow();
-        var tc1 = tr.insertCell();
-        var tc2 = tr.insertCell();
-        tc1.innerHTML = ingredient.name;
-        tc2.innerHTML = ingredient.price + " $";
+        this.observers.forEach(
+            element => element.notify
+        )
     };
 
-    this.removeIngredient = function(id){
-        for(var i = 0; i < ingredients.length; i++) {
-            if(ingredients[i].name == id) {
+    /*
+        This function is removing ingredient from 
+        Burger ingridient list by specified id
+    */
+    this.removeIngredient = function (id) {
+        for (var i = 0; i < ingredients.length; i++) {
+            if (ingredients[i].name == id) {
                 ingredients.splice(i, 1);
+                console.log("Usunięto element " + id);
                 break;
             }
         }
     };
 
-    this.getIngredientByName = function(){
-        for(var i = 0; i < ingredients.length; i++) {
-            if(ingredients[i].name == id) {
-                break;
-            }
-            return ingredients[i].name;
-        }
-    };
-
-    this.showIngredients = function(){
-        let log = "Ingredients: ";
-        for(var i=0; i<ingredients.length; i++){
-            log += ingredients[i].name + ", ";
-        }
-        console.log(log);
-    };
-
-    this.calculatePrice = function(){
+    this.calculatePrice = function () {
         price = 0;
-        for(var i=0; i<ingredients.length; i++){
+        for (var i = 0; i < ingredients.length; i++) {
             price += ingredients[i].price;
         }
 
@@ -62,4 +48,4 @@ function Burger(name, price, ingredients = [], size){
     };
 }
 
-export{Burger};
+export { Burger };
