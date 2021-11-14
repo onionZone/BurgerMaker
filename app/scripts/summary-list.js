@@ -1,5 +1,7 @@
-function SummaryList(){
-    this.addIngredientsToSummaryList = function(ingredient){
+import { burger } from "./script.js";
+
+function SummaryList() {
+    this.addIngredientsToSummaryList = function (ingredient) {
         var table = document.getElementById("summary-table");
         var row = table.insertRow(-1);
         var cellName = row.insertCell(0);
@@ -9,22 +11,30 @@ function SummaryList(){
         cellRemove.appendChild(removeButton);
         removeButton.setAttribute("class", "remove-button");
 
-        cellName.innerHTML = ingredient.name;
+        cellName.innerHTML = ingredient.name[0].toUpperCase() + ingredient.name.substring(1);
+        cellName.setAttribute("name", ingredient.name)
         cellPrice.innerHTML = ingredient.price + " $";
         cellRemove.appendChild(removeButton);
         removeButton.innerHTML = "X"
-        removeButton.setAttribute("onclick", )
+        removeButton.addEventListener("click", function(){
+            burger.removeIngredient(ingredient.name);
+        });
+    }
+
+    this.removeIngredientsFromSummaryList = function (rowIndex) {
+        var table = document.getElementById("summary-table");
+        table.deleteRow(rowIndex);
     };
 
-    this.removeIngredientsFromSummaryList = function(){
-        var table = document.getElementById("summary-table")
-        
-    };
-    
-    this.updatePriceInSummaryList = function(price){
+    this.updatePriceInSummaryList = function (price) {
         var priceText = document.getElementById("summary-value");
-        priceText.innerHTML = "Burger price: " + price + " $";
+        if(price==0){
+            priceText.style.visibility = "hidden";
+        } else {        
+            priceText.style.visibility = "visible";
+            priceText.innerHTML = "Burger price: " + price + " $";
+        }
     };
 }
 
-export {SummaryList};
+export { SummaryList };

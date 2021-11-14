@@ -19,7 +19,7 @@
     padding: 1rem;
 }   
 
-.ingredient-button{
+.ingredient-button, .meat-type-button, .bun-type-button{
     width: 10rem;
     height: 5rem;
     background-color: transparent;
@@ -33,7 +33,7 @@
 
 }
 
-.type-button{
+.size-button{
     width: 10rem;
     height: 10rem;
     background-color: transparent;
@@ -46,22 +46,28 @@
     font-size: 2rem;
 }
 
-.type-button img{
+.size-button img{
     color: #f9f9f9;
 }
 
 
-.ingredient-button:hover{
+.ingredient-button:hover, .meat-type-button:hover, .bun-type-button:hover {
     width: 10.1rem;
     height: 5.1rem;
     background-color: #f9f9f9;
     color: #1a1a1a;
 }
 
-.type-button:hover{
+.size-button:hover{
     width: 10.1rem;
     height: 10.1rem;
     background-color: #f9f9f9;
     color: #1a1a1a;
 }
+
+.active{
+    background-color: #008b46;
+    color: #f9f9f9;
+}
+
 
